@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imran Hossen | ICT Student & Aspiring Software Engineer</title>
+  <meta name="description" content="Personal portfolio of Imran Hossen, an undergraduate ICT student, competitive programmer, and aspiring software engineer from Bangladesh.">
+  <meta name="author" content="Imran Hossen">
+  <meta name="theme-color" content="#0A0E17">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Imran Hossen | ICT Student & Aspiring Software Engineer">
+  <meta property="og:description" content="Undergraduate ICT student, competitive programmer, and aspiring software engineer from Bangladesh.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://imran-ict21.github.io/">
+  <meta property="og:image" content="assets/profile.jpg">
+
+  <link rel="icon" href="data:,">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo" aria-label="Imran Hossen home">&lt;/<span>Imran</span>&gt;</a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#home" class="nav__link" data-section="home">Home</a></li>
+        <li><a href="#about" class="nav__link" data-section="about">About</a></li>
+        <li><a href="#education" class="nav__link" data-section="education">Education</a></li>
+        <li><a href="#skills" class="nav__link" data-section="skills">Skills</a></li>
+        <li><a href="#projects" class="nav__link" data-section="projects">Projects</a></li>
+        <li><a href="#contact" class="nav__link" data-section="contact">Contact</a></li>
+      </ul>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light mode">
+        <i data-lucide="moon" class="icon-moon"></i>
+        <i data-lucide="sun" class="icon-sun"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__grid"></div>
+        <div class="hero__glow hero__glow--1"></div>
+        <div class="hero__glow hero__glow--2"></div>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__content" data-reveal>
+          <span class="badge">Hello, I'm</span>
+          <h1 class="hero__name">Imran Hossen</h1>
+
+          <div class="hero__roles" aria-label="Roles">
+            <span class="hero__role">Undergraduate ICT Student</span>
+            <span class="hero__role">Competitive Programmer</span>
+            <span class="hero__role">Aspiring Software Engineer</span>
+          </div>
+
+          <p class="hero__intro">
+            I'm an undergraduate ICT student at Mawlana Bhashani Science and Technology University
+            with a strong interest in competitive programming and software development. I enjoy
+            solving algorithmic problems, building practical software solutions, and continuously
+            improving my technical skills.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">
+              <i data-lucide="folder-code"></i> View My Projects
+            </a>
+            <a href="assets/Imran_Hossen_Resume.pdf" class="btn btn--outline" download target="_blank" rel="noopener">
+              <i data-lucide="download"></i> Download Resume
+            </a>
+          </div>
+
+          <div class="hero__socials">
+            <a href="https://github.com/imran-ict21" target="_blank" rel="noopener" aria-label="GitHub profile"><i data-lucide="github"></i></a>
+            <a href="https://www.linkedin.com/in/imran-hossen-320a0a3b0" target="_blank" rel="noopener" aria-label="LinkedIn profile"><i data-lucide="linkedin"></i></a>
+            <a href="mailto:imran.ict21@gmail.com" aria-label="Send email"><i data-lucide="mail"></i></a>
+          </div>
+        </div>
+
+        <div class="hero__visual" data-reveal>
+          <div class="code-window" aria-hidden="true">
+            <div class="code-window__bar">
+              <span class="dot dot--red"></span><span class="dot dot--yellow"></span><span class="dot dot--green"></span>
+              <span class="code-window__tab">main.cpp</span>
+            </div>
+            <pre class="code-window__body"><code><span class="c-key">#include</span> <span class="c-str">&lt;iostream&gt;</span>
+<span class="c-key">using namespace</span> std;
+
+<span class="c-type">int</span> <span class="c-fn">main</span>() {
+    <span class="c-type">bool</span> learning = <span class="c-key">true</span>;
+    <span class="c-key">while</span> (learning) {
+        build();
+        solve();
+        improve();
+    }
+    cout &lt;&lt; <span class="c-str">"<span id="typedText"></span><span class="cursor">|</span>"</span>;
+}</code></pre>
+          </div>
+
+          <div class="profile-card">
+            <div class="profile-card__ring"></div>
+            <img src="assets/profile.jpg" alt="Portrait of Imran Hossen" class="profile-card__img" loading="lazy">
+            <span class="float-chip float-chip--1">C++</span>
+            <span class="float-chip float-chip--2">DSA</span>
+            <span class="float-chip float-chip--3">Git</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+        <i data-lucide="chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <p class="section__eyebrow">Get to know me</p>
+        <h2 class="section__title">About Me</h2>
+
+        <div class="about__grid">
+          <div class="about__text" data-reveal>
+            <p>I'm an undergraduate ICT student at MBSTU with a genuine interest in competitive
+              programming and software development. I enjoy solving algorithmic problems and
+              steadily sharpening my problem-solving skills through practice and hands-on projects.</p>
+            <p>My focus areas include web development, artificial intelligence, and systems
+              programming, and I'm always exploring new tools and technologies to build
+              practical solutions.</p>
+            <p>I'm looking for opportunities where I can apply what I've learned, work on real
+              projects, collaborate with others, and grow as a software engineer.</p>
+          </div>
+
+          <div class="about__stats" data-reveal>
+            <div class="stat-card">
+              <i data-lucide="graduation-cap"></i>
+              <span>ICT Undergraduate</span>
+            </div>
+            <div class="stat-card">
+              <i data-lucide="code-2"></i>
+              <span>Competitive Programmer</span>
+            </div>
+            <div class="stat-card">
+              <i data-lucide="rocket"></i>
+              <span>Software Developer</span>
+            </div>
+            <div class="stat-card">
+              <i data-lucide="calendar"></i>
+              <span>Expected Graduation: 2028</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section" id="education">
+      <div class="container">
+        <p class="section__eyebrow">Academic background</p>
+        <h2 class="section__title">Education</h2>
+
+        <div class="timeline" data-reveal>
+          <div class="timeline__marker"><i data-lucide="graduation-cap"></i></div>
+          <div class="timeline__card">
+            <span class="timeline__badge">Expected Graduation · 2028</span>
+            <h3>Bachelor of Science in Engineering (B.Sc. Engg.)</h3>
+            <p class="timeline__field">Information and Communication Technology (ICT)</p>
+            <p class="timeline__uni">Mawlana Bhashani Science and Technology University (MBSTU)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <div class="container">
+        <p class="section__eyebrow">What I work with</p>
+        <h2 class="section__title">Technical Skills</h2>
+
+        <div class="skills__grid">
+          <div class="skill-category" data-reveal>
+            <h3><i data-lucide="terminal"></i> Programming Languages</h3>
+            <div class="chip-list">
+              <span class="chip">C</span>
+              <span class="chip">C++</span>
+              <span class="chip">Java</span>
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JavaScript (Basic)</span>
+            </div>
+          </div>
+
+          <div class="skill-category" data-reveal>
+            <h3><i data-lucide="wrench"></i> Tools & Technologies</h3>
+            <div class="chip-list">
+              <span class="chip">Git</span>
+              <span class="chip">GitHub</span>
+              <span class="chip">Visual Studio Code</span>
+              <span class="chip">Code::Blocks</span>
+              <span class="chip">Linux (Ubuntu)</span>
+              <span class="chip">Microsoft Word</span>
+              <span class="chip">Microsoft Excel</span>
+              <span class="chip">Microsoft PowerPoint</span>
+              <span class="chip">Canva</span>
+            </div>
+          </div>
+
+          <div class="skill-category" data-reveal>
+            <h3><i data-lucide="cpu"></i> Computer Science Fundamentals</h3>
+            <div class="chip-list">
+              <span class="chip">Data Structures & Algorithms</span>
+              <span class="chip">Object-Oriented Programming (OOP)</span>
+              <span class="chip">Operating System Concepts</span>
+              <span class="chip">Computer Networking Basics</span>
+              <span class="chip">Problem Solving</span>
+              <span class="chip">Debugging</span>
+              <span class="chip">File Handling in C/C++</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURED PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <p class="section__eyebrow">Things I've built</p>
+        <h2 class="section__title">Featured Projects</h2>
+
+        <div class="project-grid">
+          <article class="project-card" data-reveal>
+            <div class="project-card__icon"><i data-lucide="shield-check"></i></div>
+            <h3>Password Strength Analyzer</h3>
+            <p>A desktop application designed to evaluate password security using multiple validation techniques.</p>
+            <ul class="project-card__features">
+              <li>Evaluates password strength based on security rules</li>
+              <li>Performs pattern analysis</li>
+              <li>Provides instant security feedback</li>
+              <li>Includes input validation</li>
+              <li>Simple and user-friendly interface</li>
+            </ul>
+            <div class="tag-list">
+              <span class="tag">C++</span>
+              <span class="tag">Desktop App</span>
+              <span class="tag">Validation</span>
+            </div>
+            <button class="btn btn--ghost btn--disabled" disabled>
+              <i data-lucide="github"></i> Repository Coming Soon
+            </button>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-card__icon"><i data-lucide="file-text"></i></div>
+            <h3>Resume Builder</h3>
+            <p>A dynamic application that helps users generate professional resumes with ease.</p>
+            <ul class="project-card__features">
+              <li>Dynamic resume generation</li>
+              <li>Organized resume layout</li>
+              <li>Easy customization</li>
+              <li>Professional formatting</li>
+              <li>User-friendly interface</li>
+            </ul>
+            <div class="tag-list">
+              <span class="tag">Java</span>
+              <span class="tag">UI Design</span>
+              <span class="tag">Automation</span>
+            </div>
+            <button class="btn btn--ghost btn--disabled" disabled>
+              <i data-lucide="github"></i> Repository Coming Soon
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CURRENTLY WORKING ON ============ -->
+    <section class="section section--alt" id="progress">
+      <div class="container">
+        <p class="section__eyebrow">In the workshop</p>
+        <h2 class="section__title">Currently Working On</h2>
+
+        <div class="progress-grid">
+          <article class="progress-card" data-reveal>
+            <span class="progress-card__badge">In Progress</span>
+            <i data-lucide="wallet" class="progress-card__icon"></i>
+            <h3>Daily Expense & Finance Dashboard</h3>
+            <p>A practical dashboard for tracking daily expenses and personal financial information.</p>
+          </article>
+
+          <article class="progress-card" data-reveal>
+            <span class="progress-card__badge">In Progress</span>
+            <i data-lucide="scan-line" class="progress-card__icon"></i>
+            <h3>Smart Washroom Attendance System</h3>
+            <p>A QR-code-based attendance system designed as an academic/software project.</p>
+          </article>
+
+          <article class="progress-card" data-reveal>
+            <span class="progress-card__badge">In Progress</span>
+            <i data-lucide="keyboard" class="progress-card__icon"></i>
+            <h3>Typing Speed Checker</h3>
+            <p>A tool for measuring typing speed and performance.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ AREAS OF INTEREST ============ -->
+    <section class="section" id="interests">
+      <div class="container">
+        <p class="section__eyebrow">Where my curiosity goes</p>
+        <h2 class="section__title">Areas of Interest</h2>
+
+        <div class="interest-grid">
+          <div class="interest-card" data-reveal><i data-lucide="swords"></i><span>Competitive Programming</span></div>
+          <div class="interest-card" data-reveal><i data-lucide="globe"></i><span>Web Development</span></div>
+          <div class="interest-card" data-reveal><i data-lucide="brain-circuit"></i><span>Artificial Intelligence</span></div>
+          <div class="interest-card" data-reveal><i data-lucide="server-cog"></i><span>Systems Programming</span></div>
+          <div class="interest-card" data-reveal><i data-lucide="laptop-2"></i><span>Software Development</span></div>
+          <div class="interest-card" data-reveal><i data-lucide="git-branch"></i><span>Open Source Learning</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STRENGTHS ============ -->
+    <section class="section section--alt" id="strengths">
+      <div class="container">
+        <p class="section__eyebrow">What I bring</p>
+        <h2 class="section__title">Strengths</h2>
+
+        <div class="strength-grid">
+          <div class="strength-card" data-reveal><i data-lucide="brain"></i><h3>Strong Analytical Thinking</h3></div>
+          <div class="strength-card" data-reveal><i data-lucide="puzzle"></i><h3>Problem-Solving Mindset</h3></div>
+          <div class="strength-card" data-reveal><i data-lucide="zap"></i><h3>Quick Learner</h3></div>
+          <div class="strength-card" data-reveal><i data-lucide="book-open"></i><h3>Continuous Self-Learning</h3></div>
+          <div class="strength-card" data-reveal><i data-lucide="users"></i><h3>Team Collaboration</h3></div>
+          <div class="strength-card" data-reveal><i data-lucide="refresh-cw"></i><h3>Adaptability</h3></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LANGUAGES ============ -->
+    <section class="section" id="languages">
+      <div class="container">
+        <p class="section__eyebrow">How I communicate</p>
+        <h2 class="section__title">Languages</h2>
+
+        <div class="language-list" data-reveal>
+          <div class="language-item">
+            <span class="language-item__name">Bengali</span>
+            <span class="language-item__level">Native</span>
+          </div>
+          <div class="language-item">
+            <span class="language-item__name">English</span>
+            <span class="language-item__level">Professional Working Proficiency</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GITHUB / DEVELOPER SECTION ============ -->
+    <section class="section section--cta" id="github-cta">
+      <div class="container cta__inner" data-reveal>
+        <i data-lucide="github" class="cta__icon"></i>
+        <h2>Let's Build Something Together</h2>
+        <p>I'm continuously learning, experimenting, and building practical software projects.
+          Feel free to explore my repositories and connect with me.</p>
+        <a href="https://github.com/imran-ict21" target="_blank" rel="noopener" class="btn btn--primary">
+          <i data-lucide="github"></i> Visit My GitHub
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="container">
+        <p class="section__eyebrow">Get in touch</p>
+        <h2 class="section__title">Let's Connect</h2>
+
+        <div class="contact__grid">
+          <div class="contact__info" data-reveal>
+            <a class="contact__item" href="https://www.google.com/maps/search/?api=1&query=Kagmari%2C+Tangail%2C+Bangladesh" target="_blank" rel="noopener">
+              <i data-lucide="map-pin"></i>
+              <span>Kagmari, Tangail, Bangladesh</span>
+            </a>
+            <a class="contact__item" href="mailto:imran.ict21@gmail.com">
+              <i data-lucide="mail"></i>
+              <span>imran.ict21@gmail.com</span>
+            </a>
+            <a class="contact__item" href="https://github.com/imran-ict21" target="_blank" rel="noopener">
+              <i data-lucide="github"></i>
+              <span>GitHub — imran-ict21</span>
+            </a>
+            <a class="contact__item" href="https://www.linkedin.com/in/imran-hossen-320a0a3b0" target="_blank" rel="noopener">
+              <i data-lucide="linkedin"></i>
+              <span>LinkedIn — imran-hossen</span>
+            </a>
+          </div>
+
+          <div class="contact__cta-card" data-reveal>
+            <i data-lucide="send"></i>
+            <h3>Have an opportunity or idea?</h3>
+            <p>My inbox is always open. I'll get back to you as soon as I can.</p>
+            <a href="mailto:imran.ict21@gmail.com" class="btn btn--primary">
+              <i data-lucide="mail"></i> Send Me an Email
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <a href="#home" class="nav__logo">&lt;/<span>Imran</span>&gt;</a>
+        <p class="footer__tagline">Undergraduate ICT Student • Competitive Programmer • Aspiring Software Engineer</p>
+      </div>
+
+      <div class="footer__socials">
+        <a href="https://github.com/imran-ict21" target="_blank" rel="noopener" aria-label="GitHub"><i data-lucide="github"></i></a>
+        <a href="https://www.linkedin.com/in/imran-hossen-320a0a3b0" target="_blank" rel="noopener" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+        <a href="mailto:imran.ict21@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>&copy; <span id="year"></span> Imran Hossen. All rights reserved.</p>
+      <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        Back to Top <i data-lucide="arrow-up"></i>
+      </button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
